@@ -9,8 +9,10 @@ To start the example site
 ```
 node serve.js
 ```
+Then visit `localhost:3000/login` or `localhost:3000/verification`.
+
 You can also specify a port (the default is 3000):
 ```
 PORT=5000 node serve.js
 ```
-Then visit `localhost:5000`.
+Then visit `localhost:5000/login` or `localhost:5000/verification`.
