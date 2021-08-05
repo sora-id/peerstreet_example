@@ -1,5 +1,8 @@
 ### Setup
-First, put your API key in `sora-config.json` where it says `<api_key_here>`.
+First, put your API key in `sora-config.json` where it says `<api_key_here>`. Also, install dependencies:
+```bash
+yarn install
+```
 
 ### Running the example
 To start the example site
