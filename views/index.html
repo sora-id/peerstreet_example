@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="/script.js"></script>
+    <script type="text/javascript" src="https://verify.soraid.com/sora.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Sora Example</title>
+</head>
+<body>
+    <div id="container">
+        <form method="POST" action="/login">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <p>or</p>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone"> <br><br>
+            <label for="redirect_url">Redirect URL:</label>
+            <input type="text" name="redirect_url" id="redirect_url"> <br><br>
+            <label for="auth_type_email"><tt>auth_type </tt> email:</label>
+            <input type="checkbox" name="auth_type_email" id="auth_type_email"><br><br>
+            <button id="loginsession">Create loginSession</button>
+        </form>
+    </div>
+    <script>
+        if ('{{token}}'.length > 0) {
+            verifyButton('{{token}}');
+        }
+    </script>
+</body>
+</html>
